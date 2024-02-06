@@ -347,11 +347,11 @@ Address: 1.2.3.4
 
 - `$dnstype=AAAA,denyallow=example.org,dnsrewrite=NOERROR;;` 以空的 `NOERROR` 响应所有 `AAAA` 的请求，除了 `example.org`。
 
-例外规则删除一个或所有规则：
+Exception rules unblock one or all rules:
 
-- `@@||example.com^$dnsrewrite` 删除所有 DNS 重写规则。
+- `@@||example.com^$dnsrewrite` unblocks all DNS rewrite rules.
 
-- `@@||example.com^$dnsrewrite=1.2.3.4` 删除添加带有 `1.2.3.4` 值 `A` 记录的 DNS 重写规则。
+- `@@||example.com^$dnsrewrite=1.2.3.4` unblocks the DNS rewrite rule that adds an `A` record with the value `1.2.3.4`.
 
 #### `important` {#important-modifier}
 

@@ -73,6 +73,7 @@ Bu sunucuların her biri güvenli ve güvenilir bir bağlantı sağlar, ancak "S
 | DNS, IPv6      | `2400:3200::1` ve `2400:3200:baba::1` | [AdGuard'a ekle](adguard:add_dns_server?address=2400:3200::1&name=), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=2400:3200::1&name=)                                                                     |
 | DNS-over-HTTPS | `https://dns.alidns.com/dns-query`    | [AdGuard'a ekle](adguard:add_dns_server?address=https://dns.alidns.com/dns-query&name=dns.alidns.com), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=https://dns.alidns.com/dns-query&name=dns.alidns.com) |
 | DNS-over-TLS   | `tls://dns.alidns.com`                | [AdGuard'a ekle](adguard:add_dns_server?address=tls://dns.alidns.com&name=dns.alidns.com), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=tls://dns.alidns.com&name=dns.alidns.com)                         |
+| DNS-over-QUIC  | `quic://dns.alidns.com:853`           | [AdGuard'a ekle](adguard:add_dns_server?address=quic://dns.alidns.com:853&name=dns.alidns.com:853), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=quic://dns.alidns.com:853&name=dns.alidns.com:853)       |
 
 ### BebasID tarafından BebasDNS
 
@@ -84,7 +85,7 @@ Bu, BebasDNS'nin varsayılan çeşididir. Bu çeşit reklamları, kötü amaçl�
 
 | Protokol       | Adres                                                                 |                                                                                                                                                                                                                                                     |
 | -------------- | --------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `103.87.68.194` and `35.219.67.150`                                   | [AdGuard'a ekle](adguard:add_dns_server?address=103.87.68.194&name=), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=103.87.68.194&name=)                                                                                                   |
+| DNS, IPv4      | `103.87.68.194` ve `35.219.67.150`                                    | [AdGuard'a ekle](adguard:add_dns_server?address=103.87.68.194&name=), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=103.87.68.194&name=)                                                                                                   |
 | DNS, IPv6      | `2a05:dfc7:bca0:beba:51d::53`                                         | [AdGuard'a ekle](adguard:add_dns_server?address=2a05:dfc7:bca0:beba:51d::53&name=), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=2a05:dfc7:bca0:beba:51d::53&name=)                                                                       |
 | DNS-over-HTTPS | `https://dns.bebasid.com/dns-query`                                   | [AdGuard'a ekle](adguard:add_dns_server?address=https://dns.bebasid.com/dns-query&name=dns.bebasid.com), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=https://dns.bebasid.com/dns-query&name=dns.bebasid.com)                             |
 | DNS-over-TLS   | `tls://dns.bebasid.com:853`                                           | [AdGuard'a ekle](adguard:add_dns_server?address=dns.bebasid.com:853&name=dns.bebasid.com:853), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=dns.bebasid.com:853&name=dns.bebasid.com:853)                                                 |
@@ -409,6 +410,17 @@ Bu sunucular bazı günlük kaydı, kendinden imzalı sertifikalar kullanır vey
 | DNS-over-HTTPS | `https://dns.google/dns-query`                   | [AdGuard'a ekle](adguard:add_dns_server?address=https://dns.google/dns-query&name=dns.google), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=https://dns.google/dns-query&name=dns.google) |
 | DNS-over-TLS   | `tls://dns.google`                               | [AdGuard'a ekle](adguard:add_dns_server?address=tls://dns.google&name=dns.google), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=tls://dns.google&name=dns.google)                         |
 
+### Hurricane Electric Public Recursor
+
+Hurricane Electric Public Recursor is a free alternative DNS service by Hurricane Electric with anycast.
+
+| Protokol       | Adres                            |                                                                                                                                                                                                             |
+| -------------- | -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `74.82.42.42`                    | [AdGuard'a ekle](adguard:add_dns_server?address=74.82.42.42&name=), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=74.82.42.42&name=)                                                               |
+| DNS, IPv6      | `2001:470:20::2`                 | [AdGuard'a ekle](adguard:add_dns_server?address=2001:470:20::2&name=), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=2001:470:20::2&name=)                                                         |
+| DNS-over-HTTPS | `https://ordns.he.net/dns-query` | [AdGuard'a ekle](adguard:add_dns_server?address=https://ordns.he.net/dns-query&name=ordns.he.net), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=https://ordns.he.net/dns-query&name=ordns.he.net) |
+| DNS-over-TLS   | `tls://ordns.he.net`             | [AdGuard'a ekle](adguard:add_dns_server?address=tls://ordns.he.net&name=ordns.he.net), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=tls://ordns.he.net&name=ordns.he.net)                         |
+
 ### Mullvad
 
 [Mullvad](https://mullvad.net/en/help/dns-over-https-and-dns-over-tls/), Avustralya, Almanya, Singapur, İsveç, Birleşik Krallık ve Amerika Birleşik Devletleri'nde (New York ve Los Angeles) bulunan uç noktaları ile QNAME minimizasyonu ile halka açık DNS sağlar.
@@ -627,6 +639,15 @@ EDNS İstemci Alt Ağı, yetkili DNS sunucularına gönderilen isteklerde son ku
 | DNS, IPv4 | `64.6.64.6` ve `64.6.65.6`             | [AdGuard'a ekle](adguard:add_dns_server?address=64.6.64.6&name=), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=64.6.64.6&name=)             |
 | DNS, IPv6 | `2620:74:1b::1:1` ve `2620:74:1c::2:2` | [AdGuard'a ekle](adguard:add_dns_server?address=2620:74:1b::1:1&name=), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=2620:74:1b::1:1&name=) |
 
+### Wikimedia DNS
+
+[Wikimedia DNS](https://meta.wikimedia.org/wiki/Wikimedia_DNS) is a caching, recursive, public DoH and DoT resolver service that is run and managed by the Site Reliability Engineering (Traffic) team at the Wikimedia Foundation on all six Wikimedia data centers with anycast.
+
+| Protokol       | Adres                                                                               |                                                                                                                                                                                                                                 |
+| -------------- | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://wikimedia-dns.org/dns-query`                                               | [AdGuard'a ekle](adguard:add_dns_server?address=https://wikimedia-dns.org/dns-query&name=wikimedia-dns.org), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=https://wikimedia-dns.org/dns-query&name=wikimedia-dns.org) |
+| DNS-over-TLS   | Ana makine adı: `wikimedia-dns.org` IP: `185.71.138.138` ve IPv6: `2001:67c:930::1` | [AdGuard'a ekle](adguard:add_dns_server?address=tls://wikimedia-dns.org&name=wikimedia-dns.org), [AdGuard VPN'e ekle](adguard:add_dns_server?address=tls://wikimedia-dns.org&name=wikimedia-dns.org)                            |
+
 ## **Bölgesel çözümleyiciler**
 
 Bölgesel DNS çözümleyicileri genellikle belirli coğrafi bölgelere odaklanır ve bu bölgelerdeki kullanıcılar için optimize edilmiş performans sunar. Bu çözümleyiciler genellikle kar amacı gütmeyen kuruluşlar, yerel İSS'ler veya diğer kuruluşlar tarafından işletilmektedir.
@@ -642,7 +663,7 @@ Bölgesel DNS çözümleyicileri genellikle belirli coğrafi bölgelere odaklan�
 
 ### ByteDance Public DNS
 
-ByteDance Public DNS, Çin'de ByteDance tarafından sunulan ücretsiz bir alternatif DNS hizmetidir.
+ByteDance Public DNS, Çin'de ByteDance tarafından sunulan ücretsiz bir alternatif DNS hizmetidir. Şu anda ByteDance tarafından sağlanan tek DNS IPV4'ü desteklemektedir. DOH, DOT, DOQ ve diğer şifrelenmiş DNS hizmetleri yakında yayınlanacaktır.
 
 | Protokol  | Adres                          |                                                                                                                                               |
 | --------- | ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -689,21 +710,11 @@ ByteDance Public DNS, Çin'de ByteDance tarafından sunulan ücretsiz bir altern
 
 [Comss.one DNS](https://www.comss.ru/page.php?id=7315), reklamlara, izlemeye ve kimlik avına karşı korumalı, hızlı ve güvenli bir DNS hizmetidir.
 
-#### West DNS Server (Ana)
-
-| Protokol       | Adres                             |                                                                                                                                                                                                                 |
-| -------------- | --------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS | `https://dns.comss.one/dns-query` | [AdGuard'a ekle](adguard:add_dns_server?address=https://dns.comss.one/dns-query&name=dns.comss.one), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=https://dns.comss.one/dns-query&name=dns.comss.one) |
-| DNS-over-TLS   | `tls://dns.comss.one`             | [AdGuard'a ekle](adguard:add_dns_server?address=tls://dns.comss.one&name=dns.comss.one), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=tls://dns.comss.one&name=dns.comss.one)                         |
-| DNS-over-QUIC  | `quic://dns.comss.one:854`        | [AdGuard'a ekle](adguard:add_dns_server?address=quic://dns.comss.one:854&name=dns.comss.one:854), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=quic://dns.comss.one:854&name=dns.comss.one:854)       |
-
-#### East DNS Server (Sibirya ve Uzak Doğu)
-
-| Protokol       | Adres                                  |                                                                                                                                                                                                                                     |
-| -------------- | -------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS | `https://dns.east.comss.one/dns-query` | [AdGuard'a ekle](adguard:add_dns_server?address=https://dns.east.comss.one/dns-query&name=dns.east.comss.one), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=https://dns.east.comss.one/dns-query&name=dns.east.comss.one) |
-| DNS-over-TLS   | `tls://dns.east.comss.one`             | [AdGuard'a ekle](adguard:add_dns_server?address=tls://dns.east.comss.one&name=dns.east.comss.one), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=tls://dns.east.comss.one&name=dns.east.comss.one)                         |
-| DNS-over-QUIC  | `quic://dns.east.comss.one`            | [AdGuard'a ekle](adguard:add_dns_server?address=quic://dns.east.comss.one:853&name=dns.east.comss.one:853), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=quic://dns.east.comss.one:853&name=dns.east.comss.one:853)       |
+| Protokol       | Adres                               |                                                                                                                                                                                                                                                |
+| -------------- | ----------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://dns.controld.com/comss`    | [AdGuard'a ekle](adguard:add_dns_server?address=https://dns.controld.com/comss&name=dns.controld.com), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=https://dns.controld.com/comss&name=dns.controld.com)                            |
+| DNS-over-TLS   | `tls://comss.dns.controld.com`      | [AdGuard'a ekle](adguard:add_dns_server?address=tls://comss.dns.controld.com&name=comss.dns.controld.com), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=tls://comss.dns.controld.com&name=comss.dns.controld.com)                    |
+| DNS-over-QUIC  | `quic://comss.dns.controld.com:853` | [AdGuard'a ekle](adguard:add_dns_server?address=quic://comss.dns.controld.com:853&name=comss.dns.controld.com:853), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=quic://comss.dns.controld.com:853&name=comss.dns.controld.com:8534) |
 
 ### CZ.NIC ODVR
 

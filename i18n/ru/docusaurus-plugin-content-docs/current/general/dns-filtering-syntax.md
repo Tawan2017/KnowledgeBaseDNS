@@ -347,11 +347,11 @@ Address: 1.2.3.4
 
 - `$dnstype=AAAA,denyallow=example.org,dnsrewrite=NOERROR;;` отвечает пустым `NOERROR` значением для всех запросов `AAAA`, кроме запросов к `example.org`.
 
-Правила исключений отменяют одно или все правила:
+Exception rules unblock one or all rules:
 
-- `@@||example.com^$dnsrewrite` отменяет все правила DNS rewrite.
+- `@@||example.com^$dnsrewrite` unblocks all DNS rewrite rules.
 
-- `@@||example.com^$dnsrewrite=1.2.3.4` убирает правило DNS rewrite, которое добавляет запись `A` со значением `1.2.3.4`.
+- `@@||example.com^$dnsrewrite=1.2.3.4` unblocks the DNS rewrite rule that adds an `A` record with the value `1.2.3.4`.
 
 #### `important` {#important-modifier}
 

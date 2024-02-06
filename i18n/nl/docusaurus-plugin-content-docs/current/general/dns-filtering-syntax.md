@@ -429,11 +429,11 @@ This will be changed in the future.
 
 - `$dnstype=AAAA,denyallow=example.org,dnsrewrite=NOERROR;;` responds with an empty `NOERROR` answers for all `AAAA` requests except the ones for `example.org`.
 
-Exception rules remove one or all rules:
+Uitzonderingsregels deblokkeren één of alle regels:
 
-- `@@||example.com^$dnsrewrite` removes all DNS rewrite rules.
+- `@@||example.com^$dnsrewrite` deblokkeert alle DNS-herschrijfregels.
 
-- `@@||example.com^$dnsrewrite=1.2.3.4` removes the DNS rewrite rule that adds an `A` record with the value `1.2.3.4`.
+- `@@|example.com^$dnsrewrite=1.2.3.4` deblokkeert de DNS-herschrijfregel die een `A`-record toevoegt met de waarde `1.2.3.4`.
 
 
 

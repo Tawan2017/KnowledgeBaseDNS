@@ -347,7 +347,7 @@ Aktuelt understøttede RR-typer med eksempler:
 
 - `$dnstype=AAAA,denyallow=eksempel.org,dnsrewrite=NOERROR;;` besvares med tomme `NOERROR`-svar for alle `AAAA`-forespørgsler, undtagen for dem indeholdende `eksempel.org`.
 
-Undtagelsesregler fjerner én eller alle regler:
+Undtagelsesregler afblokerer én eller alle regler:
 
 - `@@||eksempel.com^$dnsrewrite` fjerner alle DNS rewrite-regler.
 

@@ -73,6 +73,7 @@ Hver af disse servere leverer en sikker og pålidelig forbindelse, men modsat "S
 | DNS, IPv6      | `2400:3200::1` og `2400:3200:baba::1` | [Føj til AdGuard](adguard:add_dns_server?address=2400:3200::1&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=2400:3200::1&name=)                                                                     |
 | DNS-over-HTTPS | `https://dns.alidns.com/dns-query`    | [Føj til AdGuard](adguard:add_dns_server?address=https://dns.alidns.com/dns-query&name=dns.alidns.com), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.alidns.com/dns-query&name=dns.alidns.com) |
 | DNS-over-TLS   | `tls://dns.alidns.com`                | [Føj til AdGuard](adguard:add_dns_server?address=tls://dns.alidns.com&name=dns.alidns.com), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.alidns.com&name=dns.alidns.com)                         |
+| DNS-over-QUIC  | `quic://dns.alidns.com:853`           | [Føj til AdGuard](adguard:add_dns_server?address=quic://dns.alidns.com:853&name=dns.alidns.com:853), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.alidns.com:853&name=dns.alidns.com:853)       |
 
 ### BebasDNS fra BebasID
 
@@ -84,7 +85,7 @@ Dette er standardvarianten af BebasDNS. Denne variant blokerer annonce-, malware
 
 | Protokol       | Adresse                                                             |                                                                                                                                                                                                                                                       |
 | -------------- | ------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `103.87.68.194` and `35.219.67.150`                                 | [Føj til AdGuard](adguard:add_dns_server?address=103.87.68.194&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=103.87.68.194&name=)                                                                                                   |
+| DNS, IPv4      | `103.87.68.194` og `35.219.67.150`                                  | [Føj til AdGuard](adguard:add_dns_server?address=103.87.68.194&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=103.87.68.194&name=)                                                                                                   |
 | DNS, IPv6      | `2a05:dfc7:bca0:beba:51d::53`                                       | [Føj til AdGuard](adguard:add_dns_server?address=2a05:dfc7:bca0:beba:51d::53&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=2a05:dfc7:bca0:beba:51d::53&name=)                                                                       |
 | DNS-over-HTTPS | `https://dns.bebasid.com/dns-query`                                 | [Føj til AdGuard](adguard:add_dns_server?address=https://dns.bebasid.com/dns-query&name=dns.bebasid.com), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.bebasid.com/dns-query&name=dns.bebasid.com)                             |
 | DNS-over-TLS   | `tls://dns.bebasid.com:853`                                         | [Føj til AdGuard](adguard:add_dns_server?address=dns.bebasid.com:853&name=dns.bebasid.com:853), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=dns.bebasid.com:853&name=dns.bebasid.com:853)                                                 |
@@ -95,14 +96,14 @@ Dette er standardvarianten af BebasDNS. Denne variant blokerer annonce-, malware
 
 Denne variant foretager ingen filtrering.
 
-| Protokol       | Adresse                                                                         |                                                                                                                                                                                                                                                                               |
-| -------------- | ------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `103.87.68.193`                                                                 | [Føj til AdGuard](adguard:add_dns_server?address=103.87.68.193&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=103.87.68.193&name=)                                                                                                                           |
-| DNS, IPv6      | `2a05:dfc7:bca0:d01c::2`                                                        | [Føj til AdGuard](adguard:add_dns_server?address=2a05:dfc7:bca0:d01c::2&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=2a05:dfc7:bca0:d01c::2&name=)                                                                                                         |
-| DNS-over-HTTPS | `https://dns.bebasid.com/unfiltered`                                            | [Føj til AdGuard](adguard:add_dns_server?address=https://dns.bebasid.com/unfiltered&name=dns.bebasid.com), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.bebasid.com/unfiltered&name=dns.bebasid.com)                                                   |
-| DNS-over-TLS   | `tls://unfiltered.dns.bebasid.com:853`                                          | [Føj til AdGuard](adguard:add_dns_server?address=unfiltered.dns.bebasid.com:853&name=unfiltered.dns.bebasid.com:853), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=unfiltered.dns.bebasid.com:853&name=unfiltered.dns.bebasid.com:853)                             |
-| DNS-over-QUIC  | `quic://unfiltered.dns.bebasid.com:853`                                         | [Føj til AdGuard](adguard:add_dns_server?address=quic://unfiltered.dns.bebasid.com:853&name=quic://unfiltered.dns.bebasid.com:853), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=quic://unfiltered.dns.bebasid.com:853&name=quic://unfiltered.dns.bebasid.com:853) |
-| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.unfiltered.dns.bebasid.com` IP: `35.219.67.150:5443` | [Føj til AdGuard](sdns://AQcAAAAAAAAAEjM1LjIxOS42Ny4xNTA6NTQ0MyAtDC9I4194j3U0lZcEBPPd43IvR8gGNOS5QNVIx_7PNyoyLmRuc2NyeXB0LWNlcnQudW5maWx0ZXJlZC5kbnMuYmViYXNpZC5jb20)                                                                                                         |
+| Protokol       | Adresse                                                                        |                                                                                                                                                                                                                                                                               |
+| -------------- | ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `103.87.68.193`                                                                | [Føj til AdGuard](adguard:add_dns_server?address=103.87.68.193&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=103.87.68.193&name=)                                                                                                                           |
+| DNS, IPv6      | `2a05:dfc7:bca0:d01c::2`                                                       | [Føj til AdGuard](adguard:add_dns_server?address=2a05:dfc7:bca0:d01c::2&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=2a05:dfc7:bca0:d01c::2&name=)                                                                                                         |
+| DNS-over-HTTPS | `https://dns.bebasid.com/unfiltered`                                           | [Føj til AdGuard](adguard:add_dns_server?address=https://dns.bebasid.com/unfiltered&name=dns.bebasid.com), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.bebasid.com/unfiltered&name=dns.bebasid.com)                                                   |
+| DNS-over-TLS   | `tls://unfiltered.dns.bebasid.com:853`                                         | [Føj til AdGuard](adguard:add_dns_server?address=unfiltered.dns.bebasid.com:853&name=unfiltered.dns.bebasid.com:853), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=unfiltered.dns.bebasid.com:853&name=unfiltered.dns.bebasid.com:853)                             |
+| DNS-over-QUIC  | `quic://unfiltered.dns.bebasid.com:853`                                        | [Føj til AdGuard](adguard:add_dns_server?address=quic://unfiltered.dns.bebasid.com:853&name=quic://unfiltered.dns.bebasid.com:853), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=quic://unfiltered.dns.bebasid.com:853&name=quic://unfiltered.dns.bebasid.com:853) |
+| DNSCrypt, IPv4 | Udbyder: `2.dnscrypt-cert.unfiltered.dns.bebasid.com` IP: `35.219.67.150:5443` | [Føj til AdGuard](sdns://AQcAAAAAAAAAEjM1LjIxOS42Ny4xNTA6NTQ0MyAtDC9I4194j3U0lZcEBPPd43IvR8gGNOS5QNVIx_7PNyoyLmRuc2NyeXB0LWNlcnQudW5maWx0ZXJlZC5kbnMuYmViYXNpZC5jb20)                                                                                                         |
 
 #### Sikkerhed
 
@@ -409,6 +410,17 @@ Disse servere bruger noget logning, selvsignerede certifikater eller ingen under
 | DNS-over-HTTPS | `https://dns.google/dns-query`                   | [Føj til AdGuard](adguard:add_dns_server?address=https://dns.google/dns-query&name=dns.google), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.google/dns-query&name=dns.google) |
 | DNS-over-TLS   | `tls://dns.google`                               | [Føj til AdGuard](adguard:add_dns_server?address=tls://dns.google&name=dns.google), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.google&name=dns.google)                         |
 
+### Hurricane Electric Public Recursor
+
+Hurricane Electric Public Recursor er en gratis alternativ DNS-tjeneste fra Hurricane Electric med anycast.
+
+| Protokol       | Adresse                          |                                                                                                                                                                                                               |
+| -------------- | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `74.82.42.42`                    | [Føj til AdGuard](adguard:add_dns_server?address=74.82.42.42&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=74.82.42.42&name=)                                                               |
+| DNS, IPv6      | `2001:470:20::2`                 | [Føj til AdGuard](adguard:add_dns_server?address=2001:470:20::2&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=2001:470:20::2&name=)                                                         |
+| DNS-over-HTTPS | `https://ordns.he.net/dns-query` | [Føj til AdGuard](adguard:add_dns_server?address=https://ordns.he.net/dns-query&name=ordns.he.net), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://ordns.he.net/dns-query&name=ordns.he.net) |
+| DNS-over-TLS   | `tls://ordns.he.net`             | [Føj til AdGuard](adguard:add_dns_server?address=tls://ordns.he.net&name=ordns.he.net), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://ordns.he.net&name=ordns.he.net)                         |
+
 ### Mullvad
 
 [Mullvad](https://mullvad.net/en/help/dns-over-https-and-dns-over-tls/) leverer offentligt tilgængelig DNS med QNAME-minimering, endepunketer placeret i Australien, Singapore, Storbritannien, Sverige, Tyskland og USA (New York og Los Angeles).
@@ -627,6 +639,15 @@ EDNS Client Subnet er en metode, der inkluderer komponenter af slutbrugerens IP-
 | DNS, IPv4 | `64.6.64.6` og `64.6.65.6`             | [Føj til AdGuard](adguard:add_dns_server?address=64.6.64.6&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=64.6.64.6&name=)             |
 | DNS, IPv6 | `2620:74:1b::1:1` og `2620:74:1c::2:2` | [Føj til AdGuard](adguard:add_dns_server?address=2620:74:1b::1:1&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=2620:74:1b::1:1&name=) |
 
+### Wikimedia DNS
+
+[Wikimedia DNS](https://meta.wikimedia.org/wiki/Wikimedia_DNS) er en caching, rekursiv, offentlig DoH og DoT opløsertjeneste drevet og håndteret af Site Reliability Engineering (Traffic)-teamet hos Wikimedia Foundation på alle seks Wikimedia-datacentre med anycast.
+
+| Protokol       | Adresse                                                                        |                                                                                                                                                                                                                                   |
+| -------------- | ------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://wikimedia-dns.org/dns-query`                                          | [Føj til AdGuard](adguard:add_dns_server?address=https://wikimedia-dns.org/dns-query&name=wikimedia-dns.org), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://wikimedia-dns.org/dns-query&name=wikimedia-dns.org) |
+| DNS-over-TLS   | Værtsnavn: `wikimedia-dns.org` IP: `185.71.138.138` og IPv6: `2001:67c:930::1` | [Føj til AdGuard](adguard:add_dns_server?address=tls://wikimedia-dns.org&name=wikimedia-dns.org), [Føj til AdGuard VPN](adguard:add_dns_server?address=tls://wikimedia-dns.org&name=wikimedia-dns.org)                            |
+
 ## **Regionale opløsere**
 
 Regionale DNS-opløsere er typisk fokuseret på bestemte geografiske områder og tilbyder optimeret ydeevne for brugere herfra. Disse opløsere drives ofte af non-profit organisationer, lokale internetudbydere eller andre entiteter.
@@ -642,7 +663,7 @@ Regionale DNS-opløsere er typisk fokuseret på bestemte geografiske områder og
 
 ### ByteDance Public DNS
 
-ByteDance Public DNS er en gratis alternativ DNS-tjeneste fra ByteDance i Kina.
+ByteDance Public DNS er en gratis alternativ DNS-tjeneste fra ByteDance i Kina. Den eneste DNS, der pt. leveres af ByteDance, understøtter IPV4. DOH, DOT, DOQ og andre krypterede DNS-tjenester lanceres snart.
 
 | Protokol  | Adresse                        |                                                                                                                                                 |
 | --------- | ------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -689,21 +710,11 @@ I tilstanden "Family", Beskyttet + blokering af voksenindhold.
 
 [Comss.one DNS](https://www.comss.ru/page.php?id=7315) er en hurtig og sikker DNS-tjeneste med reklame-, sporings- og phishing-beskyttelse.
 
-#### West DNS Server (Primær)
-
-| Protokol       | Adresse                           |                                                                                                                                                                                                                   |
-| -------------- | --------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS | `https://dns.comss.one/dns-query` | [Føj til AdGuard](adguard:add_dns_server?address=https://dns.comss.one/dns-query&name=dns.comss.one), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.comss.one/dns-query&name=dns.comss.one) |
-| DNS-over-TLS   | `tls://dns.comss.one`             | [Føj til AdGuard](adguard:add_dns_server?address=tls://dns.comss.one&name=dns.comss.one), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.comss.one&name=dns.comss.one)                         |
-| DNS-over-QUIC  | `quic://dns.comss.one:854`        | [Føj til AdGuard](adguard:add_dns_server?address=quic://dns.comss.one:854&name=dns.comss.one:854), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.comss.one:854&name=dns.comss.one:854)       |
-
-#### East DNS Server (Sibirien og Fjernøsten)
-
-| Protokol       | Adresse                                |                                                                                                                                                                                                                                       |
-| -------------- | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS | `https://dns.east.comss.one/dns-query` | [Føj til AdGuard](adguard:add_dns_server?address=https://dns.east.comss.one/dns-query&name=dns.east.comss.one), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.east.comss.one/dns-query&name=dns.east.comss.one) |
-| DNS-over-TLS   | `tls://dns.east.comss.one`             | [Føj til AdGuard](adguard:add_dns_server?address=tls://dns.east.comss.one&name=dns.east.comss.one), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.east.comss.one&name=dns.east.comss.one)                         |
-| DNS-over-QUIC  | `quic://dns.east.comss.one`            | [Føj til AdGuard](adguard:add_dns_server?address=quic://dns.east.comss.one:853&name=dns.east.comss.one:853), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.east.comss.one:853&name=dns.east.comss.one:853)       |
+| Protokol       | Adresse                             |                                                                                                                                                                                                                                                  |
+| -------------- | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| DNS-over-HTTPS | `https://dns.controld.com/comss`    | [Føj til AdGuard](adguard:add_dns_server?address=https://dns.controld.com/comss&name=dns.controld.com), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.controld.com/comss&name=dns.controld.com)                            |
+| DNS-over-TLS   | `tls://comss.dns.controld.com`      | [Føj til AdGuard](adguard:add_dns_server?address=tls://comss.dns.controld.com&name=comss.dns.controld.com), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://comss.dns.controld.com&name=comss.dns.controld.com)                    |
+| DNS-over-QUIC  | `quic://comss.dns.controld.com:853` | [Føj til AdGuard](adguard:add_dns_server?address=quic://comss.dns.controld.com:853&name=comss.dns.controld.com:853), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=quic://comss.dns.controld.com:853&name=comss.dns.controld.com:8534) |
 
 ### CZ.NIC ODVR
 
