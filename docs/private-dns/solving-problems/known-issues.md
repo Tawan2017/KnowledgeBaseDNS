@@ -1,3 +1,4 @@
+![Uploading Screenshot_20240208_131719.jpg…]()
 ---
 title: Known issues
 sidebar_position: 1
